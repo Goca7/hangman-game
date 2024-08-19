@@ -11,8 +11,33 @@
     <title>Hangman Game - Guess the Word!</title>
     <!-- Favicon -->
   </head>
+  
   <body>
-    TEST
+    <div class="gameArea">
+      <div class="score"></div> <!-- Displays score and messages -->
+      <div class="puzzle"></div> <!-- Displays the word puzzle (dashes) -->
+      <div class="letters"></div> <!-- Displays the clickable letters -->
+      <button>Start Game</button> <!-- Start Game button -->
+      
+      <!-- Gallows and hangman figure container -->
+      <div class="hangman-container">
+          <div class="base"></div> <!-- The base of the pole -->
+          <div class="vertical-pole"></div> <!-- The vertical pole -->
+          <div class="horizontal-beam"></div> <!-- The horizontal beam -->
+          <div class="rope"></div> <!-- The rope connecting the beam to the hangman -->
+
+          <!-- Hangman figure parts -->
+          <div class="hangman-part head"></div> <!-- Hangman head -->
+          <div class="hangman-part body"></div> <!-- Hangman body -->
+          <div class="hangman-part left-arm"></div> <!-- Left arm -->
+          <div class="hangman-part right-arm"></div> <!-- Right arm -->
+          <div class="hangman-part left-leg"></div> <!-- Left leg -->
+          <div class="hangman-part right-leg"></div> <!-- Right leg -->
+      </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
     
 
   </body>
