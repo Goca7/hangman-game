@@ -1,0 +1,123 @@
+/* Styling for the game area */
+.gameArea {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Styling for the letter boxes */
+.box,
+.boxD {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Styling for the letter placeholders in the puzzle */
+.boxE {
+    display: inline-block;
+    width: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+/* Styling for the clicked letters */
+.boxD {
+    background-color:#ddd;
+}
+
+/* Hangman container styling */
+.hangman-container {
+    margin: 20px auto;
+    width: 150px;
+    height: 200px;
+    position: relative;
+}
+
+/* Styling for the gallows */
+.base {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    bottom: 0;
+}
+
+.vertical-pole {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: black;
+    left: 25px;
+}
+
+.horizontal-beam {
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background-color: black;
+    top: 0;
+    left: 25px;
+}
+
+/* Rope styling */
+.rope {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    top: 10px; /* Positioned just below the horizontal beam */
+    left: 95px; /* Centered above the head */
+}
+
+/* Styling for hangman parts  */
+.hangman-part {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+/* Styling for the head (a circle) */
+.head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 30px; /* Adjusted to fit below the rope */
+    left: 80px;
+}
+
+/* Styling for the body (a vertical line) */
+.body {
+    width: 10px;
+    height: 60px;
+    top: 70px;
+    left: 95px;
+}
+
+/* Styling for the arms */
+.left-arm, .right-arm {
+    width: 40px;
+    height: 10px;
+    top: 90px;
+}
+.left-arm {
+    left: 55px;
+}
+.right-arm {
+    left: 95px;
+}
+
+/* Styling for the legs */
+.left-leg, .right-leg {
+    width: 40px;
+    height: 10px;
+    top: 130px;
+}
+.left-leg {
+    left: 55px;
+}
+.right-leg {
+    left: 95px;
+}
