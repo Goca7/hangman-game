@@ -44,5 +44,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // This function handles the game's logic when a letter is guessed.
+    function builder() {
+        letters.innerHTML = "";
+        puzzle.innerHTML = "";
+        game.solution.forEach((lett) => {
+            let div = createElements("div", puzzle, "-", "boxE");
+            if (lett === " ") {
+                div.style.borderColor = "white";
+                div.textContent = " ";
+            } else {
+                game.total++;
+            }
+            game.puzz.push(div);
+        });
+        updateScore(); // Call updateScore after building the puzzle
+
 });
 
