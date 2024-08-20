@@ -74,7 +74,20 @@ document.addEventListener('DOMContentLoaded', function() {
             div.addEventListener("click", checker);
         }
 
-
     };
+    // This function checks if the guessed letter is in the current word.
+    function checkLetter(letter) {
+        console.log(letter);
+        let correctGuess = false;
+        game.solution.forEach((ele, index) => {
+            if (ele.toUpperCase() === letter) {
+                game.puzz[index].textContent = letter;
+                correctGuess = true;
+                updateScore();
+            }            
+
+});
+
+}
 
 });
