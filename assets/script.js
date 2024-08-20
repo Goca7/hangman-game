@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             score.textContent = "No More Words";
         }
     }
+    
     // This function creates a new HTML element of the specified type, adds a class name, appends it to a parent element, and sets its text content.
     function createElements(elType, parentEle, output, cla) {
         const temp = document.createElement(elType);
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         temp.textContent = output;
         return temp;
     }
+    
     // This function is responsible for updating the game's score and handling the game's end condition.
     function updateScore() {
         score.textContent = `Total Letters Left: ${game.total}`;
@@ -75,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
     };
+    
     // This function checks if the guessed letter is in the current word.
     function checkLetter(letter) {
         console.log(letter);
@@ -86,8 +89,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateScore();
             }            
 
-});
+        });
 
-}
+        //Increase the wrong guesses count and draw the hangman figure.
+        if (!correctGuess) {
+            game.wrongGuesses++;
+            drawHangman();
+        }
+
+
+    }
 
 });
