@@ -60,6 +60,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         updateScore(); // Call updateScore after building the puzzle
 
+        // Build the letter buttons
+        for (let i = 0; i < 26; i++) {
+            let temp = String.fromCharCode(65 + i);
+            let div = createElements("div", letters, temp, "box");
+            let checker = function (e) {
+                div.style.backgroundColor = "#ddd";
+                div.classList.remove("box");
+                div.classList.add("boxD");
+                div.removeEventListener("click", checker);
+                checkLetter(temp);
+            };
+            div.addEventListener("click", checker);
+        }
+
 
     };
 
