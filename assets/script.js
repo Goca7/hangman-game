@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         score.textContent = `Total Letters Left: ${game.total}`;
         if (game.total <= 0) {
             console.log("game over");
-            score.textContent = "Congratulations! You guessed the word: " + game.cur);
+            score.textContent = "Congratulations!;
             btn.style.display = "block";
         }
     }
