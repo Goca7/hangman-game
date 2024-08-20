@@ -61,4 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateScore(); // Call updateScore after building the puzzle
 
 
+    };
 
+});
