@@ -34,5 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
         temp.textContent = output;
         return temp;
     }
+    // This function is responsible for updating the game's score and handling the game's end condition.
+    function updateScore() {
+        score.textContent = `Total Letters Left: ${game.total}`;
+        if (game.total <= 0) {
+            console.log("game over");
+            score.textContent = "Game Over";
+            btn.style.display = "block";
+        }
+    }
+
 });
 
