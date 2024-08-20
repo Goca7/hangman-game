@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (ele.toUpperCase() === letter) {
                 game.puzz[index].textContent = letter;
                 correctGuess = true;
+                game.total--;
                 updateScore();
             }            
-
         });
 
         //Increase the wrong guesses count and draw the hangman figure.
@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
             game.wrongGuesses++;
             drawHangman();
         }
-
     }
 
     // This function draws the hangman parts as the player makes wrong guesses.
@@ -111,5 +110,4 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.style.display = "block";
         }
     }
-
 });
