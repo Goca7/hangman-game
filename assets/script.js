@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
             score.textContent = "No More Words";
         }
     }
-
     // This function creates a new HTML element of the specified type, adds a class name, appends it to a parent element, and sets its text content.
-// Parameters:
-// elType: The type of HTML element to create (e.g., 'div', 'span', 'p', etc.).
-// parentEle: The parent element to which the new element will be appended.
-// output: The text content of the new element.
-// cla: The class name to be added to the new element.
-// Returns: The newly created and manipulated HTML element.
+    function createElements(elType, parentEle, output, cla) {
+        const temp = document.createElement(elType);
+        temp.classList.add(cla);
+        parentEle.append(temp);
+        temp.textContent = output;
+        return temp;
+    }
 });
