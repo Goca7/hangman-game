@@ -97,7 +97,19 @@ document.addEventListener('DOMContentLoaded', function() {
             drawHangman();
         }
 
+    }
 
+    // This function draws the hangman parts as the player makes wrong guesses.
+    // It also displays a game over message and a button to restart the game when the player loses.
+    function drawHangman() {
+        if (game.wrongGuesses <= hangmanParts.length) {
+            hangmanParts[game.wrongGuesses - 1].style.display = 'block'; // Show the next hangman part
+        }
+
+        if (game.wrongGuesses === hangmanParts.length) {
+            score.textContent = "Game Over - You Lost!";
+            btn.style.display = "block";
+        }
     }
 
 });
