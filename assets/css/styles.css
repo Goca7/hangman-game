@@ -1,3 +1,11 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Styling for the game area */
 .gameArea {
     text-align: center;
@@ -11,21 +19,21 @@
 .box,
 .boxD {
     display: inline-block;
-    padding: 0.5rem; /* Reduced padding */
+    padding: 1rem;
     cursor: pointer;
-    margin: 0.25rem; /* Reduced margin */
-    font-size: 1.2rem; /* Reduced font size */
+    margin: 0.5rem;
+    font-size: 1.5rem;
 }
 
 /* Styling for the letter placeholders in the puzzle */
 .boxE {
     display: inline-block;
-    width: auto; /* Auto width to fit content */
-    padding: 0.5rem; /* Reduced padding */
-    margin: 0.25rem; /* Reduced margin */
+    width: 10%;
+    min-width: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.5rem; /* Adjusted font size */
+    font-size: 1.5rem;
+    margin: 0.5rem;
 }
 
 /* Styling for the clicked letters */
@@ -36,8 +44,9 @@
 /* Hangman container styling */
 .hangman-container {
     margin: 20px auto;
-    width: 200px; /* Set a specific width */
-    height: 250px; /* Set a specific height to accommodate all parts */
+    width: 50%;
+    max-width: 300px;
+    height: auto;
     position: relative;
 }
 
@@ -56,12 +65,11 @@
     height: 100%;
     background-color: black;
     left: 25px;
-    bottom: 10px; /* Adjusted so it connects to the base */
 }
 
 .horizontal-beam {
     position: absolute;
-    width: 100px;
+    width: 80px;
     height: 10px;
     background-color: black;
     top: 0;
@@ -74,8 +82,8 @@
     width: 2px;
     height: 20px;
     background-color: black;
-    top: 10px;
-    left: 70px; /* Centered above the head */
+    top: 10px; /* Positioned just below the horizontal beam */
+    left: 95px; /* Centered above the head */
 }
 
 /* Styling for hangman parts */
@@ -87,49 +95,45 @@
 
 /* Styling for the head (a circle) */
 .head {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    top: 30px;
-    left: 55px;
+    top: 30px; /* Adjusted to fit below the rope */
+    left: 80px;
 }
 
 /* Styling for the body (a vertical line) */
 .body {
-    width: 2px;
-    height: 40px;
-    top: 60px;
-    left: 69px;
+    width: 10px;
+    height: 60px;
+    top: 70px;
+    left: 95px;
 }
 
 /* Styling for the arms */
 .left-arm, .right-arm {
-    width: 30px;
-    height: 2px;
-    top: 70px;
+    width: 40px;
+    height: 10px;
+    top: 90px;
 }
-
 .left-arm {
-    left: 40px;
+    left: 55px;
 }
-
 .right-arm {
-    left: 70px;
+    left: 95px;
 }
 
 /* Styling for the legs */
 .left-leg, .right-leg {
-    width: 30px;
-    height: 2px;
-    top: 100px;
+    width: 40px;
+    height: 10px;
+    top: 130px;
 }
-
 .left-leg {
-    left: 40px;
+    left: 55px;
 }
-
 .right-leg {
-    left: 70px;
+    left: 95px;
 }
 
 /* Media Query for Tablets and Smaller Screens */
@@ -142,18 +146,17 @@
     .hangman-container {
         width: 80%;
         max-width: 200px;
-        height: 150px;
     }
 
     .box, .boxD {
-        padding: 0.3rem; /* Further reduced padding */
+        padding: 0.5rem;
         font-size: 1rem;
     }
 
     .boxE {
-        padding: 0.3rem; /* Further reduced padding */
-        margin: 0.25rem;
-        font-size: 1.2rem;
+        width: 20%;
+        min-width: 30px;
+        font-size: 1rem;
     }
 }
 
@@ -167,18 +170,17 @@
     .hangman-container {
         width: 100%;
         max-width: 150px;
-        height: 120px;
     }
 
     .box, .boxD {
-        padding: 0.2rem;
+        padding: 0.3rem;
         font-size: 0.8rem;
     }
 
     .boxE {
-        padding: 0.2rem;
-        margin: 0.15rem;
-        font-size: 1rem;
+        width: 25%;
+        min-width: 20px;
+        font-size: 0.8rem;
     }
 }
 
