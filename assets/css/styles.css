@@ -28,8 +28,8 @@ body {
 /* Styling for the letter placeholders in the puzzle */
 .boxE {
     display: inline-block;
-    width: 4%; /* Further reduced width to prevent overstretching */
-    min-width: 20px; /* Further reduced minimum width */
+    width: 3%; /* Further reduced width to prevent overstretching */
+    min-width: 18px; /* Further reduced minimum width */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.2rem; /* Adjusted font size */
@@ -73,7 +73,7 @@ body {
     width: 80%;
     height: 10px;
     background-color: black;
-    top: 0;
+    top: 20px; /* Moved down to connect with the vertical pole */
     left: 10%;
 }
 
@@ -83,7 +83,7 @@ body {
     width: 2px;
     height: 20px;
     background-color: black;
-    top: 10px;
+    top: 30px; /* Adjusted to be below the horizontal beam */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -100,7 +100,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    top: 30px;
+    top: 50px; /* Adjusted for the new position of the rope */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -109,7 +109,7 @@ body {
 .body {
     width: 2px;
     height: 100px; /* Increased height for longer body */
-    top: 60px;
+    top: 80px; /* Adjusted for the new position of the head */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -118,7 +118,7 @@ body {
 .left-arm, .right-arm {
     width: 40px;
     height: 2px;
-    top: 110px;
+    top: 130px; /* Adjusted to connect with the body */
 }
 
 .left-arm {
@@ -133,7 +133,7 @@ body {
 .left-leg, .right-leg {
     width: 40px;
     height: 2px;
-    top: 160px; /* Adjusted to connect to the bottom of the body */
+    top: 180px; /* Adjusted to connect to the bottom of the body */
 }
 
 .left-leg {
@@ -166,7 +166,7 @@ body {
         padding: 0.1rem;
         margin: 0.1rem;
         font-size: 1rem;
-        width: 5%; /* Adjusted width */
+        width: 4%; /* Adjusted width */
     }
 }
 
@@ -192,7 +192,7 @@ body {
         padding: 0.1rem;
         margin: 0.1rem;
         font-size: 0.8rem;
-        width: 6%; /* Adjusted width */
+        width: 5%; /* Adjusted width */
     }
 }
 
