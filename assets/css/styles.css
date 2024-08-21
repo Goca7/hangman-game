@@ -62,7 +62,7 @@ body {
 .vertical-pole {
     position: absolute;
     width: 10px;
-    height: 90%;
+    height: 94%; /* Increased height to connect with the horizontal beam */
     background-color: black;
     left: 10%;
     bottom: 10px; /* Adjusted to connect to the base */
