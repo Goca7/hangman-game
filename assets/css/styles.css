@@ -28,12 +28,12 @@ body {
 /* Styling for the letter placeholders in the puzzle */
 .boxE {
     display: inline-block;
-    width: 10%;
+    width: 50px;
     min-width: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.5rem;
-    margin: 0.5rem;
+    margin: 5px;
 }
 
 /* Styling for the clicked letters */
@@ -44,9 +44,8 @@ body {
 /* Hangman container styling */
 .hangman-container {
     margin: 20px auto;
-    width: 50%;
-    max-width: 300px;
-    height: auto;
+    width: 150px;
+    height: 200px;
     position: relative;
 }
 
@@ -138,10 +137,10 @@ body {
 
 /* Start Game button styling */
 button {
-    display: block;
-    margin: 30px auto; /* Center the button with auto margins and space it below the gallows */
+    display: inline-block;
+    margin: 20px auto; /* Center the button below the hangman figure */
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
     background-color: #007bff;
@@ -161,8 +160,8 @@ button:hover {
     }
 
     .hangman-container {
-        width: 80%;
-        max-width: 200px;
+        width: 120px;
+        height: 160px;
     }
 
     .box, .boxD {
@@ -171,8 +170,7 @@ button:hover {
     }
 
     .boxE {
-        width: 20%;
-        min-width: 30px;
+        width: 40px;
         font-size: 1rem;
     }
 
@@ -191,8 +189,8 @@ button:hover {
     }
 
     .hangman-container {
-        width: 100%;
-        max-width: 150px;
+        width: 100px;
+        height: 140px;
     }
 
     .box, .boxD {
@@ -201,8 +199,7 @@ button:hover {
     }
 
     .boxE {
-        width: 25%;
-        min-width: 20px;
+        width: 30px;
         font-size: 0.8rem;
     }
 
