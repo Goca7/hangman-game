@@ -9,7 +9,7 @@ body {
 /* Styling for the game area */
 .gameArea {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem; /* Slightly reduced font size for better fit */
     padding: 20px;
     max-width: 90%;
     margin: auto;
@@ -19,20 +19,20 @@ body {
 .box,
 .boxD {
     display: inline-block;
-    padding: 0.3rem; /* Reduced padding to make letters more compact */
+    padding: 0.4rem; /* Adjusted padding for compactness */
     cursor: pointer;
     margin: 0.2rem; /* Reduced margin to minimize spacing */
-    font-size: 1.2rem; /* Reduced font size to fit more letters in a line */
+    font-size: 1.2rem; /* Reduced font size for better fit */
 }
 
 /* Styling for the letter placeholders in the puzzle */
 .boxE {
     display: inline-block;
-    width: auto; /* Auto width to fit content without breaking */
+    width: auto; /* Auto width to fit content */
     min-width: 30px; /* Reduced minimum width */
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.2rem; /* Reduced font size */
+    font-size: 1.2rem; /* Reduced font size for better fit */
     margin: 0.2rem; /* Reduced margin to keep words together */
 }
 
@@ -44,9 +44,9 @@ body {
 /* Hangman container styling */
 .hangman-container {
     margin: 20px auto;
-    width: 50%;
-    max-width: 300px;
-    height: auto;
+    width: 80%; /* Increased width to allow for more space */
+    max-width: 500px; /* Increased max-width */
+    height: 300px; /* Set a specific height */
     position: relative;
 }
 
@@ -64,16 +64,17 @@ body {
     width: 10px;
     height: 100%;
     background-color: black;
-    left: 25px;
+    left: 10%;
+    bottom: 10px; /* Adjusted so it connects to the base */
 }
 
 .horizontal-beam {
     position: absolute;
-    width: 80px;
+    width: 80%;
     height: 10px;
     background-color: black;
     top: 0;
-    left: 25px;
+    left: 10%;
 }
 
 /* Rope styling */
@@ -82,8 +83,9 @@ body {
     width: 2px;
     height: 20px;
     background-color: black;
-    top: 10px; /* Positioned just below the horizontal beam */
-    left: 95px; /* Centered above the head */
+    top: 10px;
+    left: 50%; /* Centered above the head */
+    transform: translateX(-50%);
 }
 
 /* Styling for hangman parts */
@@ -95,66 +97,73 @@ body {
 
 /* Styling for the head (a circle) */
 .head {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    top: 30px; /* Adjusted to fit below the rope */
-    left: 80px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Styling for the body (a vertical line) */
 .body {
-    width: 10px;
+    width: 2px;
     height: 60px;
-    top: 70px;
-    left: 95px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Styling for the arms */
 .left-arm, .right-arm {
     width: 40px;
-    height: 10px;
+    height: 2px;
     top: 90px;
 }
+
 .left-arm {
-    left: 55px;
+    left: calc(50% - 40px);
 }
+
 .right-arm {
-    left: 95px;
+    left: 50%;
 }
 
 /* Styling for the legs */
 .left-leg, .right-leg {
     width: 40px;
-    height: 10px;
+    height: 2px;
     top: 130px;
 }
+
 .left-leg {
-    left: 55px;
+    left: calc(50% - 40px);
 }
+
 .right-leg {
-    left: 95px;
+    left: 50%;
 }
 
 /* Media Query for Tablets and Smaller Screens */
 @media (max-width: 768px) {
     .gameArea {
-        font-size: 1.5rem;
+        font-size: 1.4rem; /* Adjusted font size */
         padding: 10px;
     }
 
     .hangman-container {
-        width: 80%;
-        max-width: 200px;
+        width: 90%;
+        max-width: 300px;
+        height: 200px; /* Reduced height */
     }
 
     .box, .boxD {
-        padding: 0.3rem; /* Further reduced padding for smaller screens */
+        padding: 0.3rem;
         font-size: 1rem; /* Adjusted font size */
     }
 
     .boxE {
-        padding: 0.3rem; /* Reduced padding */
+        padding: 0.3rem;
         margin: 0.2rem;
         font-size: 1rem;
     }
@@ -169,7 +178,8 @@ body {
 
     .hangman-container {
         width: 100%;
-        max-width: 150px;
+        max-width: 250px;
+        height: 180px;
     }
 
     .box, .boxD {
@@ -183,6 +193,7 @@ body {
         font-size: 0.8rem;
     }
 }
+
 
 
 /* Styling for the letter placeholders in the puzzle */
