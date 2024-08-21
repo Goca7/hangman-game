@@ -1,39 +1,26 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Styling for the game area */
 .gameArea {
     text-align: center;
-    font-size: 2rem;
-    padding: 20px;
-    max-width: 90%;
-    margin: auto;
+    font-size: 2em;
 }
 
 /* Styling for the letter boxes */
 .box,
 .boxD {
     display: inline-block;
-    padding: 1rem;
+    padding: 5px;
     cursor: pointer;
-    margin: 0.5rem;
-    font-size: 1.5rem;
+    margin: 5px;
 }
 
 /* Styling for the letter placeholders in the puzzle */
 .boxE {
     display: inline-block;
-    width: 10%;
-    min-width: 40px;
+    width: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.5rem;
-    margin: 0.5rem;
+    font-size: 1.5em;
+    margin: 5px;
 }
 
 /* Styling for the clicked letters */
@@ -44,9 +31,8 @@ body {
 /* Hangman container styling */
 .hangman-container {
     margin: 20px auto;
-    width: 50%;
-    max-width: 300px;
-    height: auto;
+    width: 150px;
+    height: 200px;
     position: relative;
 }
 
@@ -86,7 +72,7 @@ body {
     left: 95px; /* Centered above the head */
 }
 
-/* Styling for hangman parts */
+/* Styling for hangman parts  */
 .hangman-part {
     display: none;
     position: absolute;
@@ -135,55 +121,6 @@ body {
 .right-leg {
     left: 95px;
 }
-
-/* Media Query for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-    .gameArea {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-    .hangman-container {
-        width: 80%;
-        max-width: 200px;
-    }
-
-    .box, .boxD {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
-
-    .boxE {
-        width: 20%;
-        min-width: 30px;
-        font-size: 1rem;
-    }
-}
-
-/* Media Query for Mobile Screens */
-@media (max-width: 480px) {
-    .gameArea {
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    .hangman-container {
-        width: 100%;
-        max-width: 150px;
-    }
-
-    .box, .boxD {
-        padding: 0.3rem;
-        font-size: 0.8rem;
-    }
-
-    .boxE {
-        width: 25%;
-        min-width: 20px;
-        font-size: 0.8rem;
-    }
-}
-
 
 
 
