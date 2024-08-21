@@ -1,10 +1,44 @@
+/* Styling for the game area */
+.gameArea {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Styling for the letter boxes */
+.box,
+.boxD {
+    display: inline-block;
+    padding: 0.5rem; /* Reduced padding */
+    cursor: pointer;
+    margin: 0.25rem; /* Reduced margin */
+    font-size: 1.2rem; /* Reduced font size */
+}
+
+/* Styling for the letter placeholders in the puzzle */
+.boxE {
+    display: inline-block;
+    width: auto; /* Auto width to fit content */
+    padding: 0.5rem; /* Reduced padding */
+    margin: 0.25rem; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem; /* Adjusted font size */
+}
+
+/* Styling for the clicked letters */
+.boxD {
+    background-color: #ddd;
+}
+
 /* Hangman container styling */
 .hangman-container {
     margin: 20px auto;
     width: 200px; /* Set a specific width */
     height: 250px; /* Set a specific height to accommodate all parts */
     position: relative;
-    background-color: #f4f4f4; /* Optional: For debugging purposes, you can add a background color */
 }
 
 /* Styling for the gallows */
@@ -96,6 +130,56 @@
 
 .right-leg {
     left: 70px;
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .gameArea {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .hangman-container {
+        width: 80%;
+        max-width: 200px;
+        height: 150px;
+    }
+
+    .box, .boxD {
+        padding: 0.3rem; /* Further reduced padding */
+        font-size: 1rem;
+    }
+
+    .boxE {
+        padding: 0.3rem; /* Further reduced padding */
+        margin: 0.25rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+    .gameArea {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .hangman-container {
+        width: 100%;
+        max-width: 150px;
+        height: 120px;
+    }
+
+    .box, .boxD {
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .boxE {
+        padding: 0.2rem;
+        margin: 0.15rem;
+        font-size: 1rem;
+    }
 }
 
 
