@@ -21,19 +21,19 @@ body {
     display: inline-block;
     padding: 0.2rem; /* Further reduced padding for compactness */
     cursor: pointer;
-    margin: 0.2rem;
+    margin: 0.1rem; /* Reduced margin */
     font-size: 1.2rem; /* Reduced font size */
 }
 
 /* Styling for the letter placeholders in the puzzle */
 .boxE {
     display: inline-block;
-    width: 6%; /* Reduced width to make boxes more compact */
-    min-width: 30px;
+    width: 5%; /* Reduced width to make boxes more compact */
+    min-width: 25px; /* Further reduced minimum width */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.2rem; /* Adjusted font size */
-    margin: 0.2rem;
+    margin: 0.1rem; /* Reduced margin */
 }
 
 /* Styling for the clicked letters */
@@ -46,7 +46,7 @@ body {
     margin: 20px auto;
     width: 80%; /* Increased width to allow for more space */
     max-width: 500px;
-    height: 400px; /* Increased height to accommodate full hangman */
+    height: 500px; /* Increased height to accommodate full hangman */
     position: relative;
 }
 
@@ -62,7 +62,7 @@ body {
 .vertical-pole {
     position: absolute;
     width: 10px;
-    height: 100%;
+    height: 90%;
     background-color: black;
     left: 10%;
     bottom: 10px; /* Adjusted to connect to the base */
@@ -108,7 +108,7 @@ body {
 /* Styling for the body (a vertical line) */
 .body {
     width: 2px;
-    height: 60px;
+    height: 80px;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
@@ -118,7 +118,7 @@ body {
 .left-arm, .right-arm {
     width: 40px;
     height: 2px;
-    top: 90px;
+    top: 110px;
 }
 
 .left-arm {
@@ -133,7 +133,7 @@ body {
 .left-leg, .right-leg {
     width: 40px;
     height: 2px;
-    top: 130px;
+    top: 170px;
 }
 
 .left-leg {
@@ -154,19 +154,19 @@ body {
     .hangman-container {
         width: 90%;
         max-width: 300px;
-        height: 300px; /* Adjusted height */
+        height: 400px; /* Adjusted height */
     }
 
     .box, .boxD {
-        padding: 0.2rem;
+        padding: 0.1rem;
         font-size: 1rem;
     }
 
     .boxE {
-        padding: 0.2rem;
-        margin: 0.2rem;
+        padding: 0.1rem;
+        margin: 0.1rem;
         font-size: 1rem;
-        width: 8%; /* Adjusted width */
+        width: 6%; /* Adjusted width */
     }
 }
 
@@ -180,7 +180,7 @@ body {
     .hangman-container {
         width: 100%;
         max-width: 250px;
-        height: 250px; /* Adjusted height */
+        height: 350px; /* Adjusted height */
     }
 
     .box, .boxD {
@@ -190,8 +190,9 @@ body {
 
     .boxE {
         padding: 0.1rem;
-        margin: 0.15rem;
+        margin: 0.1rem;
         font-size: 0.8rem;
-        width: 10%; /* Adjusted width */
+        width: 7%; /* Adjusted width */
     }
 }
+
