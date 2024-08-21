@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 /* Styling for the game area */
@@ -46,7 +47,7 @@ body {
     margin: 20px auto;
     width: 50%;
     max-width: 300px;
-    height: auto;
+    height: 200px;
     position: relative;
 }
 
@@ -82,8 +83,8 @@ body {
     width: 2px;
     height: 20px;
     background-color: black;
-    top: 10px; /* Positioned just below the horizontal beam */
-    left: 95px; /* Centered above the head */
+    top: 10px;
+    left: 55px; /* Centered above the head */
 }
 
 /* Styling for hangman parts */
@@ -95,45 +96,49 @@ body {
 
 /* Styling for the head (a circle) */
 .head {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    top: 30px; /* Adjusted to fit below the rope */
-    left: 80px;
+    top: 30px;
+    left: 40px;
 }
 
 /* Styling for the body (a vertical line) */
 .body {
-    width: 10px;
-    height: 60px;
-    top: 70px;
-    left: 95px;
+    width: 2px;
+    height: 40px;
+    top: 60px;
+    left: 54px;
 }
 
 /* Styling for the arms */
 .left-arm, .right-arm {
-    width: 40px;
-    height: 10px;
-    top: 90px;
+    width: 20px;
+    height: 2px;
+    top: 70px;
 }
+
 .left-arm {
-    left: 55px;
+    left: 34px;
 }
+
 .right-arm {
-    left: 95px;
+    left: 54px;
 }
 
 /* Styling for the legs */
 .left-leg, .right-leg {
-    width: 40px;
-    height: 10px;
-    top: 130px;
+    width: 20px;
+    height: 2px;
+    top: 100px;
 }
+
 .left-leg {
-    left: 55px;
+    left: 34px;
 }
+
 .right-leg {
-    left: 95px;
+    left: 54px;
 }
 
 /* Media Query for Tablets and Smaller Screens */
@@ -146,6 +151,7 @@ body {
     .hangman-container {
         width: 80%;
         max-width: 200px;
+        height: 150px;
     }
 
     .box, .boxD {
@@ -157,6 +163,49 @@ body {
         width: 20%;
         min-width: 30px;
         font-size: 1rem;
+    }
+
+    /* Adjust hangman parts for smaller screen */
+    .head {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        left: 30px;
+    }
+
+    .body {
+        width: 2px;
+        height: 30px;
+        top: 50px;
+        left: 39px;
+    }
+
+    .left-arm, .right-arm {
+        width: 15px;
+        height: 2px;
+        top: 55px;
+    }
+
+    .left-arm {
+        left: 24px;
+    }
+
+    .right-arm {
+        left: 39px;
+    }
+
+    .left-leg, .right-leg {
+        width: 15px;
+        height: 2px;
+        top: 80px;
+    }
+
+    .left-leg {
+        left: 24px;
+    }
+
+    .right-leg {
+        left: 39px;
     }
 }
 
@@ -170,6 +219,7 @@ body {
     .hangman-container {
         width: 100%;
         max-width: 150px;
+        height: 120px;
     }
 
     .box, .boxD {
@@ -182,4 +232,48 @@ body {
         min-width: 20px;
         font-size: 0.8rem;
     }
+
+    /* Further adjustments for very small screens */
+    .head {
+        width: 15px;
+        height: 15px;
+        top: 15px;
+        left: 25px;
+    }
+
+    .body {
+        width: 2px;
+        height: 25px;
+        top: 40px;
+        left: 32px;
+    }
+
+    .left-arm, .right-arm {
+        width: 12px;
+        height: 2px;
+        top: 45px;
+    }
+
+    .left-arm {
+        left: 20px;
+    }
+
+    .right-arm {
+        left: 32px;
+    }
+
+    .left-leg, .right-leg {
+        width: 12px;
+        height: 2px;
+        top: 65px;
+    }
+
+    .left-leg {
+        left: 20px;
+    }
+
+    .right-leg {
+        left: 32px;
+    }
 }
+

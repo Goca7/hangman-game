@@ -1,131 +1,154 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman Game
 
-Welcome Gordana Perencevic,
+Welcome to the **Hangman Game**! This is a web-based word guessing game designed to be both fun and educational. The goal is to guess the hidden word(s) by selecting letters, with each incorrect guess revealing a part of the hangman figure. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+- [Hangman Game](#hangman-game)
+  - [Table of Contents](#table-of-contents)
+  - [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
+  - [Features](#features)
+    - [Index Page](#index-page)
+    - [Game Page](#game-page)
+    - [Contact Page](#contact-page)
+  - [UX/UI](#uxui)
+    - [Target Audience](#target-audience)
+    - [User Stories](#user-stories)
+  - [Design Choices](#design-choices)
+    - [Colour Scheme](#colour-scheme)
+    - [Fonts](#fonts)
+    - [Wireframes](#wireframes)
+  - [Testing and Validation](#testing-and-validation)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [JavaScript Validation](#javascript-validation)
+    - [Testing Responsiveness](#testing-responsiveness)
+  - [Known Bugs](#known-bugs)
+  - [Deployment](#deployment)
+  - [Sources](#sources)
+  - [Future Features](#future-features)
+  - [Acknowledgments](#acknowledgments)
 
-## Gitpod Reminders
+## Project Goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### User Goals
 
-`python3 -m http.server`
+- To play an engaging and educational word guessing game.
+- To navigate the game interface quickly and efficiently.
+- To enjoy a visually pleasing and responsive user experience across various devices.
+- To understand how the game works with minimal instructions.
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
 
-Another blue button should appear to click: _Open Browser_.
+- To provide a fun and educational game that can be accessed and enjoyed by a wide audience.
+- To create a web application that is easy to maintain and update with new words or phrases.
+- To ensure the game is accessible and usable on various devices and browsers.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Features
 
-A blue button should appear to click: _Make Public_,
+### Index Page
 
-Another blue button should appear to click: _Open Browser_.
+- **Introduction**: A brief overview of the game and how to play.
+- **Start Game Button**: A prominent button that begins the game session.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Game Page
 
-To log into the Heroku toolbelt CLI:
+- **Interactive Puzzle**: The main feature where users guess letters to reveal the hidden word.
+- **Hangman Figure**: A visual representation that builds up with each incorrect guess.
+- **Letter Buttons**: Clickable letters for guessing, with feedback on correct or incorrect guesses.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Contact Page
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+- **Responsive Form**: A contact form allowing users to provide feedback or ask questions, designed to work seamlessly across devices.
+- **Footer**: Ensures the footer remains at the bottom of the page, adapting to various screen sizes.
 
-### Connecting your Mongo database
+## UX/UI
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+### Target Audience
 
-------
+- People interested in word games.
+- Users looking for a simple and engaging online game.
+- Educators seeking tools to help with vocabulary and spelling.
 
-## Release History
+### User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- As a first-time user, I want to understand the game quickly and start playing without confusion.
+- As a returning user, I want to see if there are new words or phrases added to the game.
+- As a site owner, I want to ensure that the game is accessible and easy to use on both desktop and mobile devices.
 
-**June 18, 2024,** Add Mongo back into template
+## Design Choices
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+### Colour Scheme
 
-**May 28 2024:** Fix Mongo and Links installs
+- **Palette**: A clean and simple color scheme designed to be easy on the eyes and provide a good contrast for readability.
+- **Example Palette**: [Inspired by Coolors](https://coolors.co/cc3f0c-72705b-0f1a20-a1cca5-fffdf7)
 
-**April 26 2024:** Update node version to 16
+### Fonts
 
-**September 20 2023:** Update Python version to 3.9.17.
+- **Main Content**: [Didact Gothic](https://fonts.google.com/specimen/Didact+Gothic) for easy readability.
+- **Game Title**: [Wales Sans Headline](https://www.onlinewebfonts.com/download/87c492db36d96bca8d9d769a21874b83) for a bold and attention-grabbing appearance.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Wireframes
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- **Main Page Wireframe**: [Link to Wireframe]
+- **Game Page Wireframe**: [Link to Wireframe]
+- **Contact Page Wireframe**: [Link to Wireframe]
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Testing and Validation
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### HTML Validation
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- **Initial Validation**: HTML code was validated using the [W3C Markup Validation Service](https://validator.w3.org/). 
+- **Results**: [Link to Validation Results](https://docs.google.com/document/d/1bpeozgiIdqKK1ukf-Le-pkrP0iTv6WHeWEdsZ5wpVN4/edit?usp=sharing)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### CSS Validation
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- **Initial Validation**: CSS was validated using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+- **Results**: [Link to Validation Results](https://docs.google.com/document/d/1PLn-LXFHKpIaeiYMOUwEe_7h6ZVjw1cCxucjCS2Kp-w/edit?usp=sharing)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### JavaScript Validation
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- **Code Quality**: JavaScript code was reviewed and tested to ensure all functions operate as expected.
+- **Testing**: The game logic was thoroughly tested to handle all edge cases and ensure the user experience is smooth.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Testing Responsiveness
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- **Device Testing**: The site was tested on multiple devices including desktop, tablet, and mobile.
+- **Browser Testing**: The site was tested across different browsers including Chrome, Firefox, Safari, and Edge.
+- **Results**: The site is fully responsive, providing a consistent experience across all tested platforms.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Known Bugs
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- **Bug 1**: [Description of known bug and any temporary workarounds]
+- **Bug 2**: [Description of known bug and any temporary workarounds]
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Deployment
 
-------
+- **GitHub Pages**: The site was deployed using GitHub Pages. 
+- **Live Site**: [Link to Live Site](https://yourusername.github.io/Hangman-Game/)
+- **Deployment Steps**:
+  1. Navigate to the repository's settings.
+  2. Enable GitHub Pages from the `Main` branch.
+  3. The site is automatically deployed and updated with each push to the `Main` branch.
 
-## FAQ about the uptime script
+## Sources
 
-**Why have you added this script?**
+- **Media**: Images used in the game were sourced from [source name].
+- **Fonts**: Fonts were imported from [Google Fonts](https://fonts.google.com/) and [Online Web Fonts](https://www.onlinewebfonts.com/).
+- **Backgrounds**: Background textures were sourced from [Transparent Textures](https://www.transparenttextures.com/).
+- **Icons**: Font Awesome was used for icons in the UI.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Future Features
 
-**How will this affect me?**
+- **Multilingual Support**: Adding a toggle button to switch between English and Welsh.
+- **Review System**: Implementing a feature that allows users to leave reviews and feedback directly on the site.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Acknowledgments
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Special thanks to [Contributor Name] for [contribution].
+- Inspiration for the game design came from [Source/Website].
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
