@@ -131,7 +131,7 @@ body {
 
 /* Styling for the legs */
 .left-leg, .right-leg {
-    width: 45px;
+    width: 60px;
     height: 2px;
     top: 180px; 
 }
