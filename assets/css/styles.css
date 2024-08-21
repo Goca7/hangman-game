@@ -1,54 +1,10 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-}
-
-/* Styling for the game area */
-.gameArea {
-    text-align: center;
-    font-size: 2rem;
-    padding: 20px;
-    max-width: 90%;
-    margin: auto;
-}
-
-/* Styling for the letter boxes */
-.box,
-.boxD {
-    display: inline-block;
-    padding: 1rem;
-    cursor: pointer;
-    margin: 0.5rem;
-    font-size: 1.5rem;
-}
-
-/* Styling for the letter placeholders in the puzzle */
-.boxE {
-    display: inline-block;
-    width: 10%;
-    min-width: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    margin: 0.5rem;
-}
-
-/* Styling for the clicked letters */
-.boxD {
-    background-color: #ddd;
-}
-
 /* Hangman container styling */
 .hangman-container {
     margin: 20px auto;
-    width: 50%;
-    max-width: 300px;
-    height: 200px;
+    width: 200px; /* Set a specific width */
+    height: 250px; /* Set a specific height to accommodate all parts */
     position: relative;
+    background-color: #f4f4f4; /* Optional: For debugging purposes, you can add a background color */
 }
 
 /* Styling for the gallows */
@@ -66,11 +22,12 @@ body {
     height: 100%;
     background-color: black;
     left: 25px;
+    bottom: 10px; /* Adjusted so it connects to the base */
 }
 
 .horizontal-beam {
     position: absolute;
-    width: 80px;
+    width: 100px;
     height: 10px;
     background-color: black;
     top: 0;
@@ -84,7 +41,7 @@ body {
     height: 20px;
     background-color: black;
     top: 10px;
-    left: 55px; /* Centered above the head */
+    left: 70px; /* Centered above the head */
 }
 
 /* Styling for hangman parts */
@@ -100,7 +57,7 @@ body {
     height: 30px;
     border-radius: 50%;
     top: 30px;
-    left: 40px;
+    left: 55px;
 }
 
 /* Styling for the body (a vertical line) */
@@ -108,172 +65,37 @@ body {
     width: 2px;
     height: 40px;
     top: 60px;
-    left: 54px;
+    left: 69px;
 }
 
 /* Styling for the arms */
 .left-arm, .right-arm {
-    width: 20px;
+    width: 30px;
     height: 2px;
     top: 70px;
 }
 
 .left-arm {
-    left: 34px;
+    left: 40px;
 }
 
 .right-arm {
-    left: 54px;
+    left: 70px;
 }
 
 /* Styling for the legs */
 .left-leg, .right-leg {
-    width: 20px;
+    width: 30px;
     height: 2px;
     top: 100px;
 }
 
 .left-leg {
-    left: 34px;
+    left: 40px;
 }
 
 .right-leg {
-    left: 54px;
+    left: 70px;
 }
 
-/* Media Query for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-    .gameArea {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-    .hangman-container {
-        width: 80%;
-        max-width: 200px;
-        height: 150px;
-    }
-
-    .box, .boxD {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
-
-    .boxE {
-        width: 20%;
-        min-width: 30px;
-        font-size: 1rem;
-    }
-
-    /* Adjust hangman parts for smaller screen */
-    .head {
-        width: 20px;
-        height: 20px;
-        top: 20px;
-        left: 30px;
-    }
-
-    .body {
-        width: 2px;
-        height: 30px;
-        top: 50px;
-        left: 39px;
-    }
-
-    .left-arm, .right-arm {
-        width: 15px;
-        height: 2px;
-        top: 55px;
-    }
-
-    .left-arm {
-        left: 24px;
-    }
-
-    .right-arm {
-        left: 39px;
-    }
-
-    .left-leg, .right-leg {
-        width: 15px;
-        height: 2px;
-        top: 80px;
-    }
-
-    .left-leg {
-        left: 24px;
-    }
-
-    .right-leg {
-        left: 39px;
-    }
-}
-
-/* Media Query for Mobile Screens */
-@media (max-width: 480px) {
-    .gameArea {
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    .hangman-container {
-        width: 100%;
-        max-width: 150px;
-        height: 120px;
-    }
-
-    .box, .boxD {
-        padding: 0.3rem;
-        font-size: 0.8rem;
-    }
-
-    .boxE {
-        width: 25%;
-        min-width: 20px;
-        font-size: 0.8rem;
-    }
-
-    /* Further adjustments for very small screens */
-    .head {
-        width: 15px;
-        height: 15px;
-        top: 15px;
-        left: 25px;
-    }
-
-    .body {
-        width: 2px;
-        height: 25px;
-        top: 40px;
-        left: 32px;
-    }
-
-    .left-arm, .right-arm {
-        width: 12px;
-        height: 2px;
-        top: 45px;
-    }
-
-    .left-arm {
-        left: 20px;
-    }
-
-    .right-arm {
-        left: 32px;
-    }
-
-    .left-leg, .right-leg {
-        width: 12px;
-        height: 2px;
-        top: 65px;
-    }
-
-    .left-leg {
-        left: 20px;
-    }
-
-    .right-leg {
-        left: 32px;
-    }
-}
 
