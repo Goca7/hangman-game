@@ -17,7 +17,6 @@ Welcome to the **Hangman Game**! This is a web-based word guessing game designed
     - [User Stories](#user-stories)
   - [Design Choices](#design-choices)
     - [Colour Scheme](#colour-scheme)
-    - [Fonts](#fonts)
     - [Wireframes](#wireframes)
   - [Testing and Validation](#testing-and-validation)
     - [HTML Validation](#html-validation)
@@ -27,8 +26,6 @@ Welcome to the **Hangman Game**! This is a web-based word guessing game designed
   - [Known Bugs](#known-bugs)
   - [Deployment](#deployment)
   - [Sources](#sources)
-  - [Future Features](#future-features)
-  - [Acknowledgments](#acknowledgments)
 
 ## Project Goals
 
@@ -140,7 +137,7 @@ http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only))
 - **Device Testing**: The site was tested on multiple devices including desktop, tablet, and mobile.
 - **Browser Testing**: The site was tested across different browsers including Chrome, Firefox, Safari, and Edge.
 - **Results**: The site is fully responsive, providing a consistent experience across all tested platforms.
-- ![alt text](image.png)
+ ![alt text](image.png)
 
 ## Known Bugs
 
