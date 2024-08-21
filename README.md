@@ -12,7 +12,6 @@ Welcome to the **Hangman Game**! This is a web-based word guessing game designed
   - [Features](#features)
     - [Index Page](#index-page)
     - [Game Page](#game-page)
-    - [Contact Page](#contact-page)
   - [UX/UI](#uxui)
     - [Target Audience](#target-audience)
     - [User Stories](#user-stories)
@@ -46,12 +45,30 @@ Welcome to the **Hangman Game**! This is a web-based word guessing game designed
 - To create a web application that is easy to maintain and update with new words or phrases.
 - To ensure the game is accessible and usable on various devices and browsers.
 
+
 ## Features
 
 ### Index Page
 
-- **Introduction**: A brief overview of the game and how to play.
-- **Start Game Button**: A prominent button that begins the game session.
+The index page of the Hangman Game serves as the entry point to the game. It includes the following features:
+
+- **Start Game Button**: 
+  - Positioned at the top center of the page, this button is the main call-to-action, allowing users to start the game. Once clicked, it triggers the setup of the game and prepares the game area for user interaction.
+
+- **Gallows Display**:
+  - A visual representation of the gallows is prominently displayed on the page. This will serve as the base where the hangman figure appears as incorrect guesses are made during the game. The gallows consist of a vertical pole, a horizontal beam, and a rope where the hangman figure will be "hung."
+  
+- **Minimalistic Design**:
+  - The page features a clean and minimalistic design with ample white space, focusing the user's attention on the game elements. This simplicity helps in reducing distractions and enhances the user's gaming experience.
+
+- **Responsive Layout**:
+  - The page is designed to be responsive, ensuring that the game layout adjusts appropriately for different screen sizes, from desktops to mobile devices.
+
+- **Interactive Elements**:
+  - The start button is the only interactive element on the page before the game begins, providing a clear and straightforward user experience.
+
+This index page sets the stage for the game, focusing on a simple, clean design that centers around the game’s core interactive elements.
+
 
 ### Game Page
 
@@ -59,10 +76,6 @@ Welcome to the **Hangman Game**! This is a web-based word guessing game designed
 - **Hangman Figure**: A visual representation that builds up with each incorrect guess.
 - **Letter Buttons**: Clickable letters for guessing, with feedback on correct or incorrect guesses.
 
-### Contact Page
-
-- **Responsive Form**: A contact form allowing users to provide feedback or ask questions, designed to work seamlessly across devices.
-- **Footer**: Ensures the footer remains at the bottom of the page, adapting to various screen sizes.
 
 ## UX/UI
 
@@ -74,81 +87,78 @@ Welcome to the **Hangman Game**! This is a web-based word guessing game designed
 
 ### User Stories
 
-- As a first-time user, I want to understand the game quickly and start playing without confusion.
-- As a returning user, I want to see if there are new words or phrases added to the game.
-- As a site owner, I want to ensure that the game is accessible and easy to use on both desktop and mobile devices.
+1. As a player, I want the game to start with a random word and a set of blank spaces representing each letter of the word, so that I can begin playing the game.
+   
+2. As a player, I want to be able to guess a letter, and the game should tell me if it appears in the word or not, so that I can try to guess the word.
+
+3. As a player, I want to win the game when I correctly guess the word, so that I can feel a sense of accomplishment.
+
+4. As a player, I want to lose the game when I run out of guesses, so that I can try again.
+
+5. As a player, I want to be able to restart the game with a new word, so that I can play again.
 
 ## Design Choices
 
 ### Colour Scheme
 
-- **Palette**: A clean and simple color scheme designed to be easy on the eyes and provide a good contrast for readability.
-- **Example Palette**: [Inspired by Coolors](https://coolors.co/cc3f0c-72705b-0f1a20-a1cca5-fffdf7)
+- **Palette**: The game employs a minimalist and clean color scheme to ensure a distraction-free user experience that enhances readability and focus on gameplay.
+  - **Background Color**: The background is white (`#FFFFFF`), providing a neutral and clean backdrop that allows other elements to stand out clearly.
+  - **Text and Interactive Elements**: Letters and interactive elements, such as the alphabet and dashes representing the hidden word, are displayed in black (`#000000`). This high contrast ensures that the text is easily readable against the white background.
+  - **Buttons**: The clickable letter buttons have a white background with black text, maintaining consistency with the overall color scheme while providing a clear indication of available and selected letters.
+  - **Gallows and Hangman Figure**: The gallows and any parts of the hangman figure that appear as the game progresses are drawn in black (`#000000`), ensuring they are clearly visible and contribute to the game's aesthetic.
 
-### Fonts
+This color scheme was chosen to prioritize readability and simplicity, ensuring that the game is both accessible and easy to interact with for all users. The consistent use of black and white provides a timeless, classic look that is both functional and visually appealing.
 
-- **Main Content**: [Didact Gothic](https://fonts.google.com/specimen/Didact+Gothic) for easy readability.
-- **Game Title**: [Wales Sans Headline](https://www.onlinewebfonts.com/download/87c492db36d96bca8d9d769a21874b83) for a bold and attention-grabbing appearance.
 
 ### Wireframes
 
-- **Main Page Wireframe**: [Link to Wireframe]
-- **Game Page Wireframe**: [Link to Wireframe]
-- **Contact Page Wireframe**: [Link to Wireframe]
+- **Main Page Wireframe**: [to be added]
+- **Game Page Wireframe**: [to be added]
+
 
 ## Testing and Validation
 
 ### HTML Validation
 
 - **Initial Validation**: HTML code was validated using the [W3C Markup Validation Service](https://validator.w3.org/). 
-- **Results**: [Link to Validation Results](https://docs.google.com/document/d/1bpeozgiIdqKK1ukf-Le-pkrP0iTv6WHeWEdsZ5wpVN4/edit?usp=sharing)
+- **Results**: [Link to Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgoca7.github.io%2Fhangman-game%2F)
 
 ### CSS Validation
 
 - **Initial Validation**: CSS was validated using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
-- **Results**: [Link to Validation Results](https://docs.google.com/document/d/1PLn-LXFHKpIaeiYMOUwEe_7h6ZVjw1cCxucjCS2Kp-w/edit?usp=sharing)
+- **Results**: [Link to Validation Results](http://jigsaw.w3.org/css-validator/validator$link
+or
+http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only))
 
 ### JavaScript Validation
 
 - **Code Quality**: JavaScript code was reviewed and tested to ensure all functions operate as expected.
-- **Testing**: The game logic was thoroughly tested to handle all edge cases and ensure the user experience is smooth.
+- **Testing**: Two warning issed: 80 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics and 90Unnecessary semicolon.
 
 ### Testing Responsiveness
 
 - **Device Testing**: The site was tested on multiple devices including desktop, tablet, and mobile.
 - **Browser Testing**: The site was tested across different browsers including Chrome, Firefox, Safari, and Edge.
 - **Results**: The site is fully responsive, providing a consistent experience across all tested platforms.
+- ![alt text](image.png)
 
 ## Known Bugs
 
-- **Bug 1**: [Description of known bug and any temporary workarounds]
-- **Bug 2**: [Description of known bug and any temporary workarounds]
+None
 
 ## Deployment
 
 - **GitHub Pages**: The site was deployed using GitHub Pages. 
-- **Live Site**: [Link to Live Site](https://yourusername.github.io/Hangman-Game/)
-- **Deployment Steps**:
-  1. Navigate to the repository's settings.
-  2. Enable GitHub Pages from the `Main` branch.
-  3. The site is automatically deployed and updated with each push to the `Main` branch.
+- **Live Site**: [Link to Live Site](https://goca7.github.io/hangman-game//)
 
 ## Sources
 
-- **Media**: Images used in the game were sourced from [source name].
-- **Fonts**: Fonts were imported from [Google Fonts](https://fonts.google.com/) and [Online Web Fonts](https://www.onlinewebfonts.com/).
-- **Backgrounds**: Background textures were sourced from [Transparent Textures](https://www.transparenttextures.com/).
-- **Icons**: Font Awesome was used for icons in the UI.
+None used
 
-## Future Features
 
-- **Multilingual Support**: Adding a toggle button to switch between English and Welsh.
-- **Review System**: Implementing a feature that allows users to leave reviews and feedback directly on the site.
 
-## Acknowledgments
 
-- Special thanks to [Contributor Name] for [contribution].
-- Inspiration for the game design came from [Source/Website].
+
 
 
 
